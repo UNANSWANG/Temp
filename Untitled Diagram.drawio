@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-11T14:40:52.863Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="MZTq8KymOsbCSTFd6f5P" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-11T14:47:57.919Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="RPJ5ZPM5m8rMvfun41XN" version="17.0.0" type="github">
   <diagram id="DBygFMPKqlgIvGjf5jtN" name="Page-1">
-    <mxGraphModel dx="2075" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1867" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -99,7 +99,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="GdMeVJB9ZyJCCz1JmPij-54" value="Conn" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=default;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="60" y="40" width="250" height="320" as="geometry" />
+          <mxGeometry x="520" y="30" width="250" height="320" as="geometry" />
         </mxCell>
         <mxCell id="GdMeVJB9ZyJCCz1JmPij-55" value="+BUFFER_SIZE:int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-54">
           <mxGeometry y="26" width="250" height="26" as="geometry" />
@@ -138,16 +138,46 @@
           <mxGeometry y="294" width="250" height="26" as="geometry" />
         </mxCell>
         <mxCell id="GdMeVJB9ZyJCCz1JmPij-68" value="Serv&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=default;strokeWidth=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-110" y="542" width="160" height="86" as="geometry" />
+          <mxGeometry x="50" y="130" width="360" height="346" as="geometry" />
         </mxCell>
         <mxCell id="GdMeVJB9ZyJCCz1JmPij-69" value="+listener:Socket" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+          <mxGeometry y="26" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-75" value="+conns:Conn[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="52" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-76" value="+instance:static Serv//单例" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="78" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-77" value="+proto:ProtocolBase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="104" width="360" height="26" as="geometry" />
         </mxCell>
         <mxCell id="GdMeVJB9ZyJCCz1JmPij-70" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="130" width="360" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="GdMeVJB9ZyJCCz1JmPij-71" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-71" value="+Serv()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="138" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-79" value="+newIndex():int//找到一个新的没有客户端的索引" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="164" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-80" value="+Start(string host,int port):void//开启服务器" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="190" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-81" value="+AcceptCb(IAsyncResult ar):void//回调函数" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="216" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-82" value="+ReciveCb(IAsyncResult ar):void//回调函数" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="242" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-83" value="+ReciveCb(IAsyncResult ar):void//回调函数" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="268" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-84" value="+ProcessData(Conn conn):void//信息处理，内部调用HandleMsg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="294" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-85" value="+HandleMsg(Conn conn,ProtocolBase pro):void//处理协议" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="GdMeVJB9ZyJCCz1JmPij-68">
+          <mxGeometry y="320" width="360" height="26" as="geometry" />
         </mxCell>
         <mxCell id="GdMeVJB9ZyJCCz1JmPij-72" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=1.009;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GdMeVJB9ZyJCCz1JmPij-36" target="GdMeVJB9ZyJCCz1JmPij-49">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -155,7 +185,7 @@
             <mxPoint x="-230" y="510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GdMeVJB9ZyJCCz1JmPij-73" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.219;exitY=1.074;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="GdMeVJB9ZyJCCz1JmPij-67" target="GdMeVJB9ZyJCCz1JmPij-68">
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-73" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=1.029;entryY=0.206;entryDx=0;entryDy=0;exitX=-0.014;exitY=1.157;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="GdMeVJB9ZyJCCz1JmPij-61" target="GdMeVJB9ZyJCCz1JmPij-75">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-390" y="510" as="sourcePoint" />
             <mxPoint x="-230" y="510" as="targetPoint" />
@@ -164,6 +194,13 @@
         <mxCell id="GdMeVJB9ZyJCCz1JmPij-74" value="聚合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="GdMeVJB9ZyJCCz1JmPij-73">
           <mxGeometry x="0.1359" relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GdMeVJB9ZyJCCz1JmPij-78" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=1.007;exitY=0.899;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdMeVJB9ZyJCCz1JmPij-5" target="GdMeVJB9ZyJCCz1JmPij-69">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-270" y="260" as="sourcePoint" />
+            <mxPoint x="-60" y="540" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
       </root>
